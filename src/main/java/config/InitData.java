@@ -3,8 +3,6 @@ package config;
 import com.example.useremployee.model.Employee;
 import com.example.useremployee.model.Gender;
 import com.example.useremployee.model.User;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -16,6 +16,8 @@ public class EmployeeRestController {
 
     @GetMapping("/employees")
     public List<Employee> getUsers() {
-        return employeeRepository.findAll();
+        List<Employee> employees = employeeRepository.findAll();
+        System.out.println(employees.size());
+        return employees;
     }
 }
