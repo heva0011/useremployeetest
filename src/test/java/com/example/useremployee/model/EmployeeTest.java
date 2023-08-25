@@ -3,8 +3,8 @@ package com.example.useremployee.model;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import repositories.EmployeeRepository;
-import repositories.UserRepository;
+import com.example.useremployee.repositories.EmployeeRepository;
+import com.example.useremployee.repositories.UserRepository;
 
 import java.util.List;
 
