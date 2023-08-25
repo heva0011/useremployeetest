@@ -21,14 +21,10 @@ public class InitData implements CommandLineRunner {
     @Autowired
     EmployeeRepository employeeRepository;
 
-    //   @OneToOne
-    //   @JoinColumn(name = "useridfk", referencedColumnName = "userID", nullable = false)
-    // private User user;
-
     @Override
     public void run(String... args) throws Exception {
         User user = new User();
-        user.setUserID();
+        user.setUserID(0);
         user.setEmail("heval@hotmail.com");
         user.setPassword("password");
         userRepository.save(user);
