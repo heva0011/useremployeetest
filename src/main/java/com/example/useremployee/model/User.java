@@ -14,9 +14,6 @@ public class User {
     private String email;
     private String password;
 
-    @OneToOne
-    @JoinColumn(name = "useridfk", referencedColumnName = "userID", nullable = false)
-    private User user;
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
     @JsonBackReference
     private Employee employee;
